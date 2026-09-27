@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f5ef" />
+  <title>La Mesa — Cocina honesta, momentos felices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline">HECHO CON CARIÑO, ENTREGADO A TU PUERTA <b>· ENVÍO GRATIS DESDE S/ 80</b></div>
+  <header><div class="wrap nav"><a class="brand" href="#inicio">la mesa<span>.</span></a><nav class="navlinks"><a href="#menu">La carta</a><a href="#historia">Nuestra cocina</a><a href="#visitanos">Visítanos</a></nav><div class="nav-right"><div class="location">⌖ <span>Miraflores, Lima</span></div><button class="cart-btn" id="open-cart">Tu pedido <span class="cart-count" id="count">0</span></button></div></div></header>
+  <main id="inicio">
+    <section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Cocina de barrio, hecha en casa</div><h1>Lo rico sabe<br>mejor <em>juntos.</em></h1><p class="hero-copy">Ingredientes de temporada, recetas con historia y ese saborcito que te hace sentir en casa. Hoy cocinamos para ti.</p><div class="hero-actions"><a href="#menu" class="primary">Pedir algo rico&nbsp; ↗</a><a href="#historia" class="text-link">Conoce La Mesa</a></div><div class="hero-meta"><span>✦ <b>4.9/5</b> en reseñas</span><span>◷ Listo en <b>25–35 min</b></span><span>♡ Hecho cada día</span></div></div><div class="hero-visual"><img class="hero-photo" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=85" alt="Mesa servida con platos frescos para compartir"><div class="hero-sticker">hecho fresco<span>♥</span>todos los días</div><div class="hero-caption"><b>Un poquito de hogar</b>en cada bocado</div></div></div></section>
+    <div class="ticker">BUENA COMIDA <i>✳</i> BUENA COMPAÑÍA <i>✳</i> CERO COMPLICACIONES</div>
+    <section class="menu" id="menu"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Lo que se te antoja</div><h2>La carta de hoy</h2></div><p>Preparado al momento · Ingredientes locales</p></div><div class="filters" id="filters"><button class="filter active" data-filter="todos">Todo rico</button><button class="filter" data-filter="favoritos">Favoritos</button><button class="filter" data-filter="para-compartir">Para compartir</button><button class="filter" data-filter="principales">Principales</button><button class="filter" data-filter="postres">Postres</button></div><div class="grid" id="products"></div></div></section>
+    <section class="story" id="historia"><div class="wrap story-grid"><img class="story-img" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85" alt="Cocina cálida donde se preparan los platos de La Mesa"><div><div class="eyebrow">Una mesa siempre tiene espacio</div><h2>Empezó con una<br>receta de mamá.</h2><p>La Mesa nació de esas sobremesas que se alargan y de las recetas que pasan de mano en mano. Cocinamos como nos enseñaron en casa: con buenos ingredientes, tiempo y mucho cariño.</p><p>Hoy somos un pequeño equipo de cocineros en Lima, felices de poner un plato más en la mesa.</p><div class="story-sign">Con cariño, el equipo de La Mesa</div></div></div></section>
+    <section class="promise" id="visitanos"><div class="wrap promise-grid"><div class="promise-item"><div class="promise-icon">✳</div><div><h3>Fresco, de verdad</h3><p>Cocinamos cada pedido al momento con productos de temporada.</p></div></div><div class="promise-item"><div class="promise-icon">⌂</div><div><h3>Directo a tu puerta</h3><p>Repartimos por Miraflores, Barranco y San Isidro. Rápido y con cuidado.</p></div></div><div class="promise-item"><div class="promise-icon">♡</div><div><h3>Siempre bienvenido</h3><p>¿Tienes una pregunta? Escríbenos, nos encanta conversar.</p></div></div></div></section>
+    <section class="newsletter"><div class="wrap news-grid"><div><h2>Un poquito de La Mesa en tu correo.</h2><p>Novedades de temporada, recetas y antojos. Sin spam, palabra.</p></div><form class="signup" id="signup"><input type="email" required placeholder="Tu correo electrónico" aria-label="Tu correo electrónico"><button>Me apunto&nbsp; ↗</button></form></div></section>
+  </main><footer><div class="wrap foot"><span>© 2025 La Mesa · Hecho con cariño en Lima</span><div class="footlinks"><a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">Términos y condiciones</a></div></div></footer>
+  <div class="overlay" id="overlay"><aside class="drawer"><div class="drawer-head"><h2>Tu pedido</h2><button class="close" id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-foot"><div class="subtotal"><span>Subtotal</span><span id="subtotal">S/ 0.00</span></div><button class="checkout" id="checkout">Continuar con mi pedido&nbsp; →</button></div></aside></div><div class="toast" id="toast"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
